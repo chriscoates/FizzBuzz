@@ -12,8 +12,9 @@
 		840872791D0DB5AC000E0ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840872771D0DB5AC000E0ABB /* Main.storyboard */; };
 		8408727B1D0DB5AC000E0ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8408727A1D0DB5AC000E0ABB /* Assets.xcassets */; };
 		8408727E1D0DB5AC000E0ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8408727C1D0DB5AC000E0ABB /* LaunchScreen.storyboard */; };
-		840872891D0DB5AC000E0ABB /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840872881D0DB5AC000E0ABB /* FizzBuzzTests.swift */; };
 		840872941D0DB5AC000E0ABB /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840872931D0DB5AC000E0ABB /* FizzBuzzUITests.swift */; };
+		840872A21D0DB6BA000E0ABB /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840872A11D0DB6BA000E0ABB /* BrainTests.swift */; };
+		840872A41D0DB856000E0ABB /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840872A31D0DB856000E0ABB /* Brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,12 @@
 		8408727D1D0DB5AC000E0ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8408727F1D0DB5AC000E0ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840872841D0DB5AC000E0ABB /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		840872881D0DB5AC000E0ABB /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		8408728A1D0DB5AC000E0ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8408728F1D0DB5AC000E0ABB /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840872931D0DB5AC000E0ABB /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		840872951D0DB5AC000E0ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840872A11D0DB6BA000E0ABB /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
+		840872A31D0DB856000E0ABB /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				8408727A1D0DB5AC000E0ABB /* Assets.xcassets */,
 				8408727C1D0DB5AC000E0ABB /* LaunchScreen.storyboard */,
 				8408727F1D0DB5AC000E0ABB /* Info.plist */,
+				840872A31D0DB856000E0ABB /* Brain.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -110,7 +113,7 @@
 		840872871D0DB5AC000E0ABB /* FizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
-				840872881D0DB5AC000E0ABB /* FizzBuzzTests.swift */,
+				840872A11D0DB6BA000E0ABB /* BrainTests.swift */,
 				8408728A1D0DB5AC000E0ABB /* Info.plist */,
 			);
 			path = FizzBuzzTests;
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					8408726F1D0DB5AB000E0ABB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 24T7JPRRUH;
 					};
 					840872831D0DB5AC000E0ABB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -257,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840872761D0DB5AC000E0ABB /* ViewController.swift in Sources */,
+				840872A41D0DB856000E0ABB /* Brain.swift in Sources */,
 				840872741D0DB5AC000E0ABB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840872891D0DB5AC000E0ABB /* FizzBuzzTests.swift in Sources */,
+				840872A21D0DB6BA000E0ABB /* BrainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chris.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chris.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -423,10 +434,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chris.FizzBuzzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FizzBuzz.app/FizzBuzz";
 			};
 			name = Debug;
@@ -435,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chris.FizzBuzzTests;
