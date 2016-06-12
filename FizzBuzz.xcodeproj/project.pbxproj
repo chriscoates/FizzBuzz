@@ -52,7 +52,7 @@
 		840872A11D0DB6BA000E0ABB /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		840872A31D0DB856000E0ABB /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		840872A71D0DD151000E0ABB /* Gametests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gametests.swift; sourceTree = "<group>"; };
-		840872A91D0DD1EE000E0ABB /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		840872A91D0DD1EE000E0ABB /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +506,7 @@
 				8408729A1D0DB5AC000E0ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8408729B1D0DB5AC000E0ABB /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +515,7 @@
 				8408729D1D0DB5AC000E0ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8408729E1D0DB5AC000E0ABB /* Build configuration list for PBXNativeTarget "FizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +524,7 @@
 				840872A01D0DB5AC000E0ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
