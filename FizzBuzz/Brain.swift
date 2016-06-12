@@ -21,12 +21,12 @@ class Brain: NSObject {
     }
     
     func isDivisibleByFive(number: Int) -> Bool {
-        return isDivisibleBy(3, number: number)
+        return isDivisibleBy(5, number: number)
         
     }
     
     func isDivisibleByFifteen(number: Int) -> Bool {
-        return isDivisibleBy(3, number: number)
+        return isDivisibleBy(15, number: number)
         
     }
     
