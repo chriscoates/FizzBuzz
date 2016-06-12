@@ -36,8 +36,10 @@ class Brain: NSObject {
             return "FizzBuzz"
         } else if isDivisibleByThree(number) {
             return "Fizz"
-        } else {
+        } else if isDivisibleByFive(number){
             return "Buzz"
+        } else {
+            return "\(number)"
         }
     }
     
