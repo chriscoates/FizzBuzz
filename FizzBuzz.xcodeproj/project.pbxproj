@@ -16,6 +16,7 @@
 		840872A41D0DB856000E0ABB /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840872A31D0DB856000E0ABB /* Brain.swift */; };
 		840872A81D0DD151000E0ABB /* Gametests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840872A71D0DD151000E0ABB /* Gametests.swift */; };
 		840872AA1D0DD1EE000E0ABB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840872A91D0DD1EE000E0ABB /* Game.swift */; };
+		84136C4E1D1013D400CF2B62 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84136C4D1D1013D400CF2B62 /* ViewControllerUnitTests.swift */; };
 		841CD6541D0F416600371F44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840872771D0DB5AC000E0ABB /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		840872A31D0DB856000E0ABB /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		840872A71D0DD151000E0ABB /* Gametests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gametests.swift; sourceTree = "<group>"; };
 		840872A91D0DD1EE000E0ABB /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		84136C4D1D1013D400CF2B62 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				840872A11D0DB6BA000E0ABB /* BrainTests.swift */,
 				8408728A1D0DB5AC000E0ABB /* Info.plist */,
 				840872A71D0DD151000E0ABB /* Gametests.swift */,
+				84136C4D1D1013D400CF2B62 /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				840872A21D0DB6BA000E0ABB /* BrainTests.swift in Sources */,
 				840872A81D0DD151000E0ABB /* Gametests.swift in Sources */,
+				84136C4E1D1013D400CF2B62 /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
